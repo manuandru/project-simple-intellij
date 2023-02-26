@@ -22,7 +22,12 @@ class PersonTest {
     @Test
     void testUpdateAge() {
         assertEquals(33, person.getAge());
-        person.updateAge(34);
+        person.setAge(34);
         assertEquals(34, person.getAge());
+    }
+
+    @Test
+    void testGetAge() {
+        assertEquals(33, person.getAge());
     }
 }

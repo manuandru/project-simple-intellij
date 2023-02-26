@@ -1,7 +1,7 @@
 package model;
 
 public class Person {
-    private String name;
+    private final String name;
     private int age;
 
     public Person(String name, int age) {
@@ -17,8 +17,7 @@ public class Person {
         return age;
     }
 
-
-    public void updateAge(int newAge) {
+    public void setAge(int newAge) {
         this.age = newAge;
     }
 
